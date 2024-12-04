@@ -1,9 +1,47 @@
+/*global*/
+html{
+    font-size: 62.5%;/*10px*/
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+
+}
+p{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+a{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+
+/*utilities*/
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*header*/
 .site-header{
     background-image: url(./img/header.jpg);
     background-position: center center;
     background-size: cover;
     color: white;
-    height: 350px;
+    height: 30vh;
     text-align: center
 }
