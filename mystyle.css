@@ -1,22 +1,21 @@
 /*global*/
 html{
-    font-size: 62.5%;/*10px*/
+    font-size:62.5%;/*10px*/
 }
 html,body{
     margin:0;
     padding:0;
 }
 body{
-    font-family: "Roboto", sans-serif;
-
+    font-family: "Roboto", serif;
 }
 p{
     font-size: 1.6rem;
     line-height: 2;
 }
 a{
+    color:white;
     font-size: 1.6rem;
-    color: white;
     text-decoration: none;
 }
 h1{
@@ -28,20 +27,69 @@ h2{
 h3{
     font-size: 2.5rem;
 }
+img{
+    max-width:100%;
+}
 
-/*utilities*/
+/*utilities*/ 
 .container{
-    width: 80%;
+    width:80%;
     margin-left: auto;
     margin-right: auto;
 }
-
 /*header*/
 .site-header{
+    height: 40vh;
     background-image: url(./img/header.jpg);
     background-position: center center;
     background-size: cover;
-    color: white;
-    height: 30vh;
-    text-align: center
+    color:white;
+    text-align: center;
+}
+.menu-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*about*/
+.about-container{
+    display: flex;
+}
+
+/*houses*/
+.houses-item{
+    background-color: #dedede;
+    border:1px solid gray;
+}
+.houses-item-text{
+    padding:2rem;
+}
+.btn-details{
+    display: block;
+    background-color: orange;
+    padding:5px;
+    text-align: center;
+}
+.price{
+    color:green;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+.house-details{
+    display: flex;
+}
+.house-details img{
+    margin-right: 3rem;
+}
+.all-houses{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: row;
 }
