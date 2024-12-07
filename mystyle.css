@@ -76,7 +76,7 @@ img{
 }
 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 li{
     list-style: none;
@@ -90,6 +90,40 @@ li{
 .all-houses{
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 2rem;
     flex-direction: row;
+}
+
+/*contact page*/
+.contact-site-header{
+    height: 20vh;
+    background-color: orange;
+    background-position: center center;
+    background-size: cover;
+    color:black;
+    text-align: center;
+}
+.form-container{
+    width: 60%;
+    font-size: 2rem;
+    background-color: #dedede;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 3rem;
+    line-height: 2.5;
+}
+fieldset {
+    border-radius: 0.8rem;
+}
+.contact-footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #dedede;
+    border: black;
+    margin-top: 5rem;
+}
+.fa-brands{
+    font-size: 40px;
 }
