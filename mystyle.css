@@ -37,6 +37,15 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+.bottom-line{
+    border-bottom:1px solid lightgray;
+    margin-bottom: 2rem;
+}
+@media(max-width:768px){
+    .container{
+        width:95%;
+    }
+}
 /*header*/
 .site-header{
     height: 40vh;
@@ -51,12 +60,31 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+@media(max-width:768px){
+    .menu-bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 /*about*/
 .about-container{
     display: flex;
+    flex-direction: row;
 }
-
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;
+    }
+    h2,h3{
+        text-align: center;
+    }
+    .about-container img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /*houses*/
 .houses-item{
     background-color: #dedede;
@@ -93,6 +121,12 @@ li{
     gap: 2rem;
     flex-direction: row;
 }
+@media(max-width:768px){
+    .all-houses{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /*contact page*/
 .contact-site-header{
@@ -114,6 +148,9 @@ li{
     border-radius: 3rem;
     line-height: 2.5;
 }
+.form-control{
+   
+}
 fieldset {
     border-radius: 0.8rem;
 }
@@ -126,4 +163,53 @@ fieldset {
 }
 .fa-brands{
     font-size: 40px;
+}
+
+/*Blog*/
+.blog-container{
+    background-color: #dedede;
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    border: solid gray;
+    padding: 2rem;
+}
+.blog-container2{
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    padding-top: 10rem;
+    flex-direction: row-reverse;
+    background-color: #dedede;
+    border: solid gray;
+    padding: 2rem;
+}
+.blog-btn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+@media(max-width:768px){
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-container2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*about*/
+.about-container{
+        display: flex;
+        gap: 2rem;
+        width: 80%;
 }
